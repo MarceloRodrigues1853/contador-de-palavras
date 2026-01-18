@@ -8,18 +8,19 @@ Guia passo a passo super simples para subir seu projeto!
 
 ### **PASSO 1: Criar Repositório no GitHub** ⭐ (Faça isso PRIMEIRO!)
 
-1. Acesse: https://github.com/MarceloRodrigues1853
-2. Clique no botão **"New"** ou **"+"** (canto superior direito)
-3. Selecione **"New repository"**
-4. Preencha:
-   - **Repository name**: `contador-de-palavras` (ou outro nome que quiser)
+1. Acesse: https://github.com
+2. Faça login na sua conta
+3. Clique no botão **"New"** ou **"+"** (canto superior direito)
+4. Selecione **"New repository"**
+5. Preencha:
+   - **Repository name**: ex: `contador-de-palavras` (ou outro nome que quiser)
    - **Description**: `Contador de palavras em arquivos de texto - Projeto Python`
    - Deixe **Público** ou **Privado** (você escolhe)
    - ⚠️ **NÃO marque** "Add a README file" (já temos um!)
    - ⚠️ **NÃO marque** "Add .gitignore" (já temos um!)
    - ⚠️ **NÃO marque** "Choose a license" (por enquanto)
-5. Clique em **"Create repository"**
-6. ⭐ **COPIE a URL** que aparece (algo como: `https://github.com/MarceloRodrigues1853/contador-de-palavras.git`)
+6. Clique em **"Create repository"**
+7. ⭐ **COPIE a URL** que aparece (algo como: `https://github.com/SEU_USUARIO/contador-de-palavras.git`)
 
 ---
 
@@ -28,7 +29,6 @@ Guia passo a passo super simples para subir seu projeto!
 No Cursor:
 - Pressione `` Ctrl+` `` (Ctrl + crase/acento grave) ou
 - Menu: **Terminal > New Terminal**
-- Ou: **Terminal > New Terminal**
 
 **IMPORTANTE:** Certifique-se de estar na pasta do projeto:
 ```bash
@@ -72,7 +72,7 @@ Isso "salva" os arquivos no Git local (ainda não foi para o GitHub!).
 Substitua `SEU_USUARIO` e `NOME_DO_REPOSITORIO` pelos seus dados:
 
 ```bash
-git remote add origin https://github.com/MarceloRodrigues1853/contador-de-palavras.git
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
 ```
 
 **OU se você copiou a URL do GitHub (PASSO 1), cole ela aqui!**
@@ -96,14 +96,15 @@ git push -u origin main
 ```
 
 **PRIMEIRA VEZ:** Pode pedir seu usuário e senha do GitHub. 
-- **Usuário**: `MarceloRodrigues1853`
+- **Usuário**: Seu nome de usuário do GitHub
 - **Senha**: Use um **Personal Access Token** (veja abaixo como criar)
 
 ---
 
 ### **PASSO 9: Verificar** ✅
 
-Acesse: https://github.com/MarceloRodrigues1853/contador-de-palavras
+Acesse a URL do seu repositório no GitHub:
+`https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO`
 
 **SEUS ARQUIVOS DEVEM ESTAR LÁ! 🎉**
 
@@ -120,7 +121,7 @@ O GitHub não aceita mais senha normal, precisa de um "token":
 3. No menu lateral esquerdo, vá em **Developer settings**
 4. Clique em **Personal access tokens** > **Tokens (classic)**
 5. Clique em **Generate new token** > **Generate new token (classic)**
-6. Dê um nome: `contador-de-palavras`
+6. Dê um nome para o token (ex: `meu-projeto-python`)
 7. Marque **expiration**: Escolha um prazo (ex: 90 dias)
 8. Marque as permissões:
    - ✅ **repo** (full control of private repositories)
@@ -148,7 +149,7 @@ git add .
 git commit -m "Primeiro commit: contador de palavras funcionando"
 
 # 5. Conectar ao GitHub (SUBSTITUA pela URL do SEU repositório!)
-git remote add origin https://github.com/MarceloRodrigues1853/contador-de-palavras.git
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
 
 # 6. Renomear branch
 git branch -M main
@@ -164,6 +165,7 @@ git push -u origin main
 ### **Erro: "repository not found"**
 - Verifique se o nome do repositório está correto
 - Verifique se você criou o repositório no GitHub primeiro (PASSO 1)
+- Verifique se você está usando a URL correta com seu nome de usuário
 
 ### **Erro: "authentication failed"**
 - Use Personal Access Token ao invés de senha
@@ -172,7 +174,7 @@ git push -u origin main
 ### **Erro: "remote origin already exists"**
 ```bash
 git remote remove origin
-git remote add origin https://github.com/MarceloRodrigues1853/contador-de-palavras.git
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
 ```
 
 ### **Quer atualizar depois de mudar arquivos?**
@@ -189,10 +191,11 @@ git push
 Antes de fazer `git push`, confira:
 
 - [ ] Repositório criado no GitHub (PASSO 1)
-- [ ] Você está na pasta `contador_de_palavras`
+- [ ] Você está na pasta do projeto (`contador_de_palavras`)
 - [ ] Arquivo `.gitignore` está funcionando (venv não será enviado)
-- [ ] README.md está atualizado com badges
+- [ ] README.md está atualizado (opcional)
 - [ ] Você copiou a URL do repositório GitHub
+- [ ] Você tem um Personal Access Token (se for primeira vez)
 
 ---
 
@@ -209,4 +212,4 @@ Antes de fazer `git push`, confira:
 
 ---
 
-**Qualquer dúvida, me chama!** 😊
+**Qualquer dúvida, consulte a documentação do GitHub!** 😊
