@@ -212,4 +212,4 @@ Antes de fazer `git push`, confira:
 
 ---
 
-**Qualquer dúvida, consulte a documentação do GitHub!** 😊
+**Qualquer dúvida, consulte a [documentação do GitHub](https://docs.github.com)!** 😊
