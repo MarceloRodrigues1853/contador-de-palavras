@@ -7,6 +7,8 @@
 
 Projeto Python para contar palavras em arquivos de texto.
 
+> 💻 Este projeto foi desenvolvido na IDE **Cursor**, utilizando assistência de IA para desenvolvimento e debugging.
+
 ## 📋 Descrição
 
 Este projeto conta palavras em arquivos de texto e mostra:
